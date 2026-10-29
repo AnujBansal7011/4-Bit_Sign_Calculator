@@ -2,9 +2,9 @@
 
 ## 📌 About the Project
 
-Calc Type 2 is a combinational calculator designed using **Verilog HDL** and simulated in AMD Xilinx Vivado. It performs addition, subtraction, multiplication, and division using 4-bit magnitude inputs with separate sign bits.
+Calc Type 2 is a combinational calculator designed using **Verilog HDL** and simulated in AMD Xilinx Vivado. It performs four basic arithmetic operations — addition, subtraction, multiplication, and division — using 4-bit magnitude inputs with separate sign bits.
 
-This project helped me understand arithmetic operations, sign handling, RTL design, and functional simulation.
+This project helped me understand RTL design, arithmetic logic, sign handling, and functional simulation.
 
 ## ⚙️ Supported Operations
 
@@ -32,11 +32,13 @@ This project helped me understand arithmetic operations, sign handling, RTL desi
 
 ## 💻 Verilog Source Code
 
-- [`calc_type2.v`](calc_type2.v) — Main Verilog RTL module.
+The Verilog RTL source files are available in the following repository folder:
+
+[**📂 View Design Source Code**](design_source/)
 
 ## 🧪 Simulation & Verification
 
-The design was manually simulated using the Vivado Simulator. Different input combinations were applied to verify the arithmetic operations and output behavior.
+The design was manually simulated using the Vivado Simulator by applying different input combinations and checking the output waveforms.
 
 The tested cases included:
 
@@ -54,18 +56,19 @@ The tested cases included:
 
 ## 📊 RTL Schematic
 
-The RTL schematic illustrates the hardware structure inferred from the Verilog design.
+The RTL schematic shows the hardware structure inferred from the Verilog design.
 
-[**View RTL Schematic →**](Schematic/)
+[**View Schematic Files →**](Schematic/)
 
 ## 🚀 How to Run
 
 1. Open **AMD Xilinx Vivado**.
 2. Create a new RTL project.
-3. Add `calc_type2.v` as a design source.
-4. Run RTL elaboration or synthesis.
-5. Apply input combinations using a testbench or Vivado simulation controls.
-6. Observe `Result` and `Sr` in the waveform window.
+3. Open the [`design_source`](design_source/) folder in this repository.
+4. Add the required Verilog source file(s) to the project.
+5. Run RTL elaboration or synthesis.
+6. Apply input combinations using a testbench or Vivado simulation controls.
+7. Observe `Result` and `Sr` in the waveform window.
 
 ## 🛠️ Tools Used
 
